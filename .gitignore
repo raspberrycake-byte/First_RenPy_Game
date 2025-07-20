@@ -1,0 +1,9 @@
+.vscode/
+log.txt
+errors.txt
+traceback.txt
+cache/
+saves/
+*.rpyc
+*.rpymc
+*.bak
