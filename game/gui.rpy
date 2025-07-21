@@ -9,7 +9,7 @@ init offset = -2
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
-    gui.init(1920, 1080)
+    gui.init(1920, 1080)  
 
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
@@ -28,7 +28,7 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#003366'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#707070'
+define gui.idle_color = '#ffffff' 
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
@@ -36,10 +36,10 @@ define gui.idle_small_color = '#606060'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#003366'
-
+ 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#555555'
+define gui.selected_color = '#09008b'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#7070707f'
@@ -70,7 +70,7 @@ define gui.text_size = 33
 
 ## The size of character names.
 define gui.name_text_size = 45
-
+ 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
 

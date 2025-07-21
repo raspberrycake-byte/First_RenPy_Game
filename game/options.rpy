@@ -30,7 +30,7 @@ define config.version = "Beta"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-""")
+""") 
 
 
 ## A short name for the game used for executables and directories in the built

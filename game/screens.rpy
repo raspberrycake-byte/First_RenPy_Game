@@ -290,8 +290,8 @@ screen navigation():
         style_prefix "navigation"
         
         if renpy.get_screen("main_menu"):
-            xalign 0.5
-            yalign 0.8
+            xalign 0.8
+            yalign 0.6
         else:
             xalign 0.05
             yalign 0.5
@@ -354,7 +354,7 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-screen main_menu():
+screen main_menu(): 
 
     ## This ensures that any other menu screen is replaced.
     tag menu
