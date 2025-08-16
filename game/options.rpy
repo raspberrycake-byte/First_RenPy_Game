@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Recursion")
+define config.name = _("dark_elegance")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,28 +23,27 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "Beta"
+define config.version = "1.0"
 
- 
+
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-""") 
+""")
 
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Recursion"
+define build.name = "dark_elegance"
 
 
 ## Sounds and music ############################################################
 
-## These three variables control, among other things, which mixers are shown
-## to the player by default. Setting one of these to False will hide the
-## appropriate mixer.
+## These three variables control which mixers are shown to the player by
+## default. Setting one of these to False will hide the appropriate mixer.
 
 define config.has_sound = True
 define config.has_music = True
@@ -143,7 +142,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "Recursion-1745623252"
+define config.save_directory = "dark_elegance-1653677868"
 
 
 ## Icon ########################################################################
@@ -196,14 +195,14 @@ init python:
     build.documentation('*.txt')
 
 
-## A Google Play license key is required to perform in-app purchases. It can be
-## found in the Google Play developer console, under "Monetize" > "Monetization
-## Setup" > "Licensing".
+## A Google Play license key is required to download expansion files and perform
+## in-app purchases. It can be found on the "Services & APIs" page of the Google
+## Play developer console.
 
 # define build.google_play_key = "..."
 
 
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
- 
+
 # define build.itch_project = "renpytom/test-project"
