@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.png", xalign=0.8, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos - 250
@@ -340,12 +340,12 @@ screen main_menu():
     tag menu
     style_prefix "main_menu"
 
-    add gui.main_menu_background
+    add gui.main_menu_background 
 
     frame:
-        style "main_menu_frame"
+        style "main_menu_frame" 
     vbox:
-        xpos 280
+        xpos 1430
         ypos 330
         textbutton _("Start") action Start() at button1
         textbutton _("Load") action ShowMenu("load") at button2
@@ -354,9 +354,9 @@ screen main_menu():
         textbutton _("About") action ShowMenu("about") at button5
         textbutton _("Quit") action Quit(confirm=not main_menu) at button6
 
-    add "gui/overlay/main_menu_logo.png"
+    add "gui/overlay/main_menu_logo.png" xpos 1130
 
-    text "[config.name!t]" size 60 xpos 501 ypos 225 xanchor 0.5 yanchor 0.5 color u"#766249"
+    text "[config.name!t]" size 60 xpos 1640 ypos 225 xanchor 0.5 yanchor 0.5 color u"#766249"
 
 
 
@@ -375,9 +375,12 @@ style main_menu_button:
     bottom_margin -28
 
 style main_menu_frame:
-    background "gui/overlay/main_menu.png"
-
+    background "gui/overlay/main_menu.png" 
+    xalign 1.0
+    xoffset 1130
+    
 style main_menu_vbox
+    
 
 
 ## Game Menu screen ############################################################
@@ -674,7 +677,7 @@ screen preferences():
     style_prefix "pref"
     if main_menu:
         add gui.main_menu_background
-    add "gui/overlay/game_menu.png"
+    add "gui/overlay/game_menu.png" 
     use navigation
     imagemap:
         ground 'gui/overlay/pref_overlay_ground.png'
@@ -834,7 +837,7 @@ screen history():
     tag menu
     if main_menu:
         add gui.main_menu_background
-    add "gui/overlay/game_menu.png"
+    add "gui/overlay/game_menu.png" 
     use navigation
 
     ## Avoid predicting this screen, as it can be very large.
@@ -928,7 +931,7 @@ screen help():
     style_prefix "help"
     if main_menu:
         add gui.main_menu_background
-    add "gui/overlay/game_menu.png"
+    add "gui/overlay/game_menu.png" 
     use navigation
 
     add "gui/overlay/help_overlay.png"
